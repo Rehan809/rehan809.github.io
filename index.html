@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rehan Shaik — Network & Security Engineer</title>
-    <meta name="description" content="CCNA-certified network and security engineer. Routing, switching, SIEM, Linux, and Power BI dashboards.">
+    <meta name="description"
+        content="CCNA-certified network and security engineer. Routing, switching, SIEM, Linux, and Power BI dashboards.">
 
     <!-- Fonts: Space Grotesk & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <style>
         :root {
@@ -19,7 +23,7 @@
             --bg-blue-light: #EBF1F8;
             --bg-card: #FFFFFF;
             --bg-tag: #EEEEEE;
-            
+
             --border-light: #E5E3DC;
             --border-card: #EAEAEA;
             --border-burgundy: #7A1C1C;
@@ -27,16 +31,16 @@
             --text-dark: #121316;
             --text-muted: #575962;
             --text-light: #FCFBF8;
-            
+
             --accent-yellow: #FCC619;
             --accent-yellow-hover: #E5B214;
             --accent-green: #0E9F6E;
             --accent-blue: #575ECF;
             --burgundy: #7A1C1C;
-            
+
             --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
-            
+
             --radius-sm: 4px;
             --radius-md: 6px;
             --radius-lg: 12px;
@@ -74,7 +78,10 @@
             display: block;
         }
 
-        .hero-band, section, footer, .modal {
+        .hero-band,
+        section,
+        footer,
+        .modal {
             position: relative;
             z-index: 2;
         }
@@ -85,14 +92,30 @@
             transition: all 0.2s ease;
         }
 
-        ul { list-style: none; }
+        ul {
+            list-style: none;
+        }
 
-        .font-mono { font-family: var(--font-mono); }
-        .text-green { color: var(--accent-green); }
-        .text-burgundy { color: var(--burgundy); }
-        .text-muted { color: var(--text-muted); }
-        .text-blue { color: var(--accent-blue); }
-        
+        .font-mono {
+            font-family: var(--font-mono);
+        }
+
+        .text-green {
+            color: var(--accent-green);
+        }
+
+        .text-burgundy {
+            color: var(--burgundy);
+        }
+
+        .text-muted {
+            color: var(--text-muted);
+        }
+
+        .text-blue {
+            color: var(--accent-blue);
+        }
+
         .section-inner {
             max-width: 1040px;
             margin: 0 auto;
@@ -100,7 +123,9 @@
         }
 
         @media (min-width: 768px) {
-            .section-inner { padding: 6rem 2rem; }
+            .section-inner {
+                padding: 6rem 2rem;
+            }
         }
 
         .hero-band {
@@ -125,9 +150,14 @@
             letter-spacing: 0.05em;
         }
 
-        .brand-dot { color: var(--accent-yellow); }
+        .brand-dot {
+            color: var(--accent-yellow);
+        }
 
-        .nav-links { display: flex; gap: 1.75rem; }
+        .nav-links {
+            display: flex;
+            gap: 1.75rem;
+        }
 
         .nav-link {
             font-family: var(--font-mono);
@@ -167,7 +197,9 @@
         }
 
         @media (min-width: 768px) {
-            .hero-title { font-size: 5rem; }
+            .hero-title {
+                font-size: 5rem;
+            }
         }
 
         .hero-subtitle {
@@ -216,7 +248,9 @@
             color: #000000;
         }
 
-        .btn-yellow:hover { background-color: var(--accent-yellow-hover); }
+        .btn-yellow:hover {
+            background-color: var(--accent-yellow-hover);
+        }
 
         .btn-hero-outline {
             background: transparent;
@@ -246,7 +280,9 @@
         }
 
         @media (min-width: 640px) {
-            .skills-grid { grid-template-columns: repeat(2, 1fr); }
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .skill-card {
@@ -339,7 +375,9 @@
             font-weight: 500;
         }
 
-        .link-btn:hover { text-decoration: underline; }
+        .link-btn:hover {
+            text-decoration: underline;
+        }
 
         /* Carousel Navigation Controls */
         .carousel-wrapper {
@@ -361,7 +399,10 @@
             color: var(--text-muted);
         }
 
-        .carousel-btns { display: flex; gap: 0.5rem; }
+        .carousel-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
 
         .icon-btn {
             background: var(--bg-card);
@@ -377,7 +418,9 @@
             transition: all 0.2s;
         }
 
-        .icon-btn:hover { background: #F0F0F0; }
+        .icon-btn:hover {
+            background: #F0F0F0;
+        }
 
         .carousel-viewport {
             overflow: hidden;
@@ -386,7 +429,9 @@
             width: 100%;
         }
 
-        .carousel-viewport:active { cursor: grabbing; }
+        .carousel-viewport:active {
+            cursor: grabbing;
+        }
 
         .carousel-container {
             display: flex;
@@ -445,7 +490,9 @@
         }
 
         @media (min-width: 768px) {
-            .project-vertical-divider { display: block; }
+            .project-vertical-divider {
+                display: block;
+            }
         }
 
         .project-details-side {
@@ -533,7 +580,9 @@
             z-index: 3;
         }
 
-        .expand-trigger-btn:hover { background: #4348B0; }
+        .expand-trigger-btn:hover {
+            background: #4348B0;
+        }
 
         .leadership-list {
             display: flex;
@@ -572,7 +621,9 @@
         }
 
         @media (min-width: 768px) {
-            .contact-heading { font-size: 3.5rem; }
+            .contact-heading {
+                font-size: 3.5rem;
+            }
         }
 
         .modal {
@@ -589,7 +640,9 @@
             padding: 1.5rem;
         }
 
-        .modal.active { display: flex; }
+        .modal.active {
+            display: flex;
+        }
 
         .modal-card {
             background: #FAFAFA;
@@ -597,7 +650,7 @@
             max-width: 960px;
             max-height: 90vh;
             border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
             padding: 2.5rem;
@@ -659,6 +712,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Hero Header -->
@@ -676,25 +730,45 @@
 
         <header class="section-inner hero-content">
             <div class="hero-badge">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="m9 12 2 2 4-4" />
+                </svg>
                 NETWORKING · INFRASTRUCTURE · SECURITY
             </div>
             <h1 class="hero-title">Rehan Shaik<span class="brand-dot">.</span></h1>
             <p class="hero-subtitle">Network & Security Engineer · CCNA</p>
-            <p class="hero-desc">I configure enterprise infrastructure, troubleshoot connectivity, and deploy secure network and server environments — from Cisco routing to SIEM-driven threat response.</p>
-            
+            <p class="hero-desc">I configure enterprise infrastructure, troubleshoot connectivity, and deploy secure
+                network and server environments — from Cisco routing to SIEM-driven threat response.</p>
+
             <div class="hero-actions">
                 <a href="mailto:rehanshaik6405@gmail.com" class="btn btn-yellow">Get in touch</a>
                 <a href="https://github.com/rehan809" target="_blank" rel="noreferrer" class="btn btn-hero-outline">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
                     GitHub
                 </a>
-                <a href="https://linkedin.com/in/rehan809" target="_blank" rel="noreferrer" class="btn btn-hero-outline">
+                <a href="https://linkedin.com/in/rehan809" target="_blank" rel="noreferrer"
+                    class="btn btn-hero-outline">
                     LinkedIn
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
                 </a>
-                <a href="https://drive.google.com/file/d/1os6l3Cg3KntEnhZRLA-4DRBoroFSuvwe/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-hero-outline">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <a href="https://drive.google.com/file/d/1os6l3Cg3KntEnhZRLA-4DRBoroFSuvwe/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-hero-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg>
                     View resume
                 </a>
             </div>
@@ -727,7 +801,8 @@
                     <p class="skill-title">SECURITY</p>
                     <div class="skill-tags">
                         <span class="tag">FortiGate</span><span class="tag">Suricata IDS</span>
-                        <span class="tag">Wazuh SIEM</span><span class="tag">Splunk</span><span class="tag">Cisco IOS</span>
+                        <span class="tag">Wazuh SIEM</span><span class="tag">Splunk</span><span class="tag">Cisco
+                            IOS</span>
                     </div>
                 </div>
 
@@ -735,7 +810,8 @@
                     <p class="skill-title">SYSTEMS</p>
                     <div class="skill-tags">
                         <span class="tag">Windows Server</span><span class="tag">Active Directory</span>
-                        <span class="tag">Ubuntu Server</span><span class="tag">VMware</span><span class="tag">Veeam</span>
+                        <span class="tag">Ubuntu Server</span><span class="tag">VMware</span><span
+                            class="tag">Veeam</span>
                         <span class="tag">NGINX</span><span class="tag">Bash</span><span class="tag">Cron</span>
                     </div>
                 </div>
@@ -744,7 +820,8 @@
                     <p class="skill-title">TOOLS</p>
                     <div class="skill-tags">
                         <span class="tag">Wireshark</span><span class="tag">GNS3</span>
-                        <span class="tag">Packet Tracer</span><span class="tag">GCP</span><span class="tag">Power BI</span>
+                        <span class="tag">Packet Tracer</span><span class="tag">GCP</span><span class="tag">Power
+                            BI</span>
                     </div>
                 </div>
 
@@ -773,8 +850,13 @@
                     <li>Diagnosed and resolved end-user connectivity incidents to maintain uptime.</li>
                     <li>Managed inventory and lifecycle tracking of networking equipment.</li>
                 </ul>
-                <a href="https://drive.google.com/file/d/1TMoFwxR73pMz8bo-YoWedm31v04KwPFU/view" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top:1.25rem;">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="https://drive.google.com/file/d/1TMoFwxR73pMz8bo-YoWedm31v04KwPFU/view" target="_blank"
+                    rel="noopener noreferrer" class="link-btn" style="margin-top:1.25rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
                     View internship certificate
                 </a>
             </div>
@@ -788,25 +870,32 @@
             
             <div class="carousel-wrapper">
                 <div class="carousel-controls">
-                    <span class="carousel-indicator" id="project-indicator">01 / 04</span>
+                    <span class="carousel-indicator" id="project-indicator">01 / 06</span>
                     <div class="carousel-btns">
                         <button class="icon-btn" id="project-prev" aria-label="Previous project">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
                         </button>
                         <button class="icon-btn" id="project-next" aria-label="Next project">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
                         </button>
                     </div>
                 </div>
 
                 <div class="carousel-viewport" id="project-viewport">
                     <div class="carousel-container" id="project-carousel">
-                        
+
                         <!-- Slide 1: Enterprise Linux Server -->
                         <div class="carousel-slide">
                             <article class="project-card">
                                 <div class="project-img-side">
-                                    <img src="assets/linux-server-diagram.png" alt="Enterprise Linux Server Diagram" onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=Enterprise+Linux+Server+Architecture';">
+                                    <img src="assets/linux-server-diagram.png" alt="Enterprise Linux Server Diagram"
+                                        onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=Enterprise+Linux+Server+Architecture';">
                                 </div>
                                 <div class="project-vertical-divider"></div>
                                 <div class="project-details-side">
@@ -817,14 +906,23 @@
                                             <span class="project-duration-text">Aug 2026</span>
                                         </div>
                                         <ul class="bullet-list" style="margin-top: 1.25rem;">
-                                            <li>Deployed and hardened an Ubuntu production server with role-based user access, SSH key management, Apache, and UFW rules.</li>
-                                            <li>Automated daily encrypted system backups and log rotations using scheduled Bash scripts and system cron jobs.</li>
-                                            <li>Diagnosed and successfully resolved live Apache port-80 binding conflicts using ss, systemctl, and journalctl tools.</li>
+                                            <li>Deployed and hardened an Ubuntu production server with role-based user
+                                                access, SSH key management, Apache, and UFW rules.</li>
+                                            <li>Automated daily encrypted system backups and log rotations using
+                                                scheduled Bash scripts and system cron jobs.</li>
+                                            <li>Diagnosed and successfully resolved live Apache port-80 binding
+                                                conflicts using ss, systemctl, and journalctl tools.</li>
                                         </ul>
                                     </div>
                                     <div class="project-link-box">
-                                        <a href="https://github.com/Rehan809/Enterprise-Linux-Server-Admin" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                        <a href="https://github.com/Rehan809/Enterprise-Linux-Server-Admin"
+                                            target="_blank" rel="noopener noreferrer" class="link-btn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                                            </svg>
                                             View project on GitHub
                                         </a>
                                     </div>
@@ -836,7 +934,8 @@
                         <div class="carousel-slide">
                             <article class="project-card">
                                 <div class="project-img-side">
-                                    <img src="assets/sutms-diagram.png" alt="SUTMS Diagram" onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=SUTMS+Architecture+Diagram';">
+                                    <img src="assets/sutms-diagram.png" alt="SUTMS Diagram"
+                                        onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=SUTMS+Architecture+Diagram';">
                                 </div>
                                 <div class="project-vertical-divider"></div>
                                 <div class="project-details-side">
@@ -847,14 +946,23 @@
                                             <span class="project-duration-text">May 2026</span>
                                         </div>
                                         <ul class="bullet-list" style="margin-top: 1.25rem;">
-                                            <li>Integrated Suricata IDS/IPS directly with Wazuh SIEM to deliver real-time intrusion detection and inline packet prevention.</li>
-                                            <li>Automated alert-to-response workflows so threat detections immediately trigger Wazuh Active Response for dynamic iptables IP blocking.</li>
-                                            <li>Achieved approximately 55% memory optimization while keeping CPU utilization strictly under 30%.</li>
+                                            <li>Integrated Suricata IDS/IPS directly with Wazuh SIEM to deliver
+                                                real-time intrusion detection and inline packet prevention.</li>
+                                            <li>Automated alert-to-response workflows so threat detections immediately
+                                                trigger Wazuh Active Response for dynamic iptables IP blocking.</li>
+                                            <li>Achieved approximately 55% memory optimization while keeping CPU
+                                                utilization strictly under 30%.</li>
                                         </ul>
                                     </div>
                                     <div class="project-link-box">
-                                        <a href="https://github.com/Rehan809/Smart-Unified-Threat-Management-System" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                        <a href="https://github.com/Rehan809/Smart-Unified-Threat-Management-System"
+                                            target="_blank" rel="noopener noreferrer" class="link-btn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                                            </svg>
                                             View project on GitHub
                                         </a>
                                     </div>
@@ -862,11 +970,55 @@
                             </article>
                         </div>
 
-                        <!-- Slide 3: DTDC Logistics Dashboard-->
+                        <!-- Slide 3: Windows EDR-Style Monitoring -->
                         <div class="carousel-slide">
                             <article class="project-card">
                                 <div class="project-img-side">
-                                    <img src="assets/dtdc-logistics.jpeg" alt="DTDC Logistics Dashboard" onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=DTDC+Logistics+Dashboard';">
+                                    <img src="assets/windows.png" alt="DTDC Logistics Dashboard"
+                                        onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=Windows+EDR-Style+Monitoring';">
+                                </div>
+                                <div class="project-vertical-divider"></div>
+                                <div class="project-details-side">
+                                    <div>
+                                        <div class="project-title-box">Windows EDR-Style Monitoring & Brute-Force
+                                            Detection Using Splunk</div>
+                                        <div class="project-meta-row" style="margin-top: 0.75rem;">
+                                            <span class="project-tools-text">Splunk Enterprise · SPL · Windows Security
+                                                Event Logs</span>
+                                            <span class="project-duration-text">Dec 2025</span>
+                                        </div>
+                                        <ul class="bullet-list" style="margin-top: 1.25rem;">
+                                            <li>Designed a security analytics lab using Splunk Enterprise to ingest and
+                                                monitor Windows Security Event Logs and Performance Monitor data.</li>
+                                            <li>Implemented time-based detection logic to group Event ID 4625 failed
+                                                logons into 3-minute buckets and flag accounts exceeding three failed
+                                                attempts.</li>
+                                            <li>Configured automated weekly alert triggers aligned with MITRE ATT&CK
+                                                technique T1110 (Brute Force) to deliver email notifications.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-link-box">
+                                        <a href="https://github.com/Rehan809/Splunk-SIEM-And-Security-Analytics-Projects/tree/main/Windows-EDR-Brute-Force-Detection"
+                                            target="_blank" rel="noopener noreferrer" class="link-btn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                                            </svg>
+                                            View project on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Slide 4: DTDC Logistics Dashboard-->
+                        <div class="carousel-slide">
+                            <article class="project-card">
+                                <div class="project-img-side">
+                                    <img src="assets/dtdc-logistics.jpeg" alt="DTDC Logistics Dashboard"
+                                        onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=DTDC+Logistics+Dashboard';">
                                 </div>
                                 <div class="project-vertical-divider"></div>
                                 <div class="project-details-side">
@@ -877,14 +1029,24 @@
                                             <span class="project-duration-text">Dec 2025</span>
                                         </div>
                                         <ul class="bullet-list" style="margin-top: 1.25rem;">
-                                            <li>Engineered an interactive dashboard providing comprehensive insights into parcel shipment trends across India.</li>
-                                            <li>Analyzed VAS charges, total pieces, volumetric weight, and amounts across sender and receiver states with summary KPIs.</li>
-                                            <li>Utilized an interactive map visualization alongside mode of transport and payment filters to identify high-volume shipping routes and optimize logistics performance.</li>
+                                            <li>Engineered an interactive dashboard providing comprehensive insights
+                                                into parcel shipment trends across India.</li>
+                                            <li>Analyzed VAS charges, total pieces, volumetric weight, and amounts
+                                                across sender and receiver states with summary KPIs.</li>
+                                            <li>Utilized an interactive map visualization alongside mode of transport
+                                                and payment filters to identify high-volume shipping routes and optimize
+                                                logistics performance.</li>
                                         </ul>
                                     </div>
                                     <div class="project-link-box">
-                                        <a href="https://github.com/Rehan809/Power-BI-Dashboards/tree/main/DTDC%20Logistics%20Dashboard" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                        <a href="https://github.com/Rehan809/Power-BI-Dashboards/tree/main/DTDC%20Logistics%20Dashboard"
+                                            target="_blank" rel="noopener noreferrer" class="link-btn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                                            </svg>
                                             View project on GitHub
                                         </a>
                                     </div>
@@ -892,11 +1054,53 @@
                             </article>
                         </div>
 
-                        <!-- Slide 4: Campus Network -->
+                        <!-- Slide 5: Cloud And Network Security Intelligence-->
                         <div class="carousel-slide">
                             <article class="project-card">
                                 <div class="project-img-side">
-                                    <img src="assets/campus-network-diagram.png" alt="Campus Network Topology Diagram" onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=Campus+Network+Topology+Diagram';">
+                                    <img src="assets/cloud-and-network.png" alt="DTDC Logistics Dashboard"
+                                        onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=Cloud+And+Network+Security+Intelligence';">
+                                </div>
+                                <div class="project-vertical-divider"></div>
+                                <div class="project-details-side">
+                                    <div>
+                                        <div class="project-title-box">Cloud And Network Security Intelligence</div>
+                                        <div class="project-meta-row" style="margin-top: 0.75rem;">
+                                            <span class="project-tools-text">Splunk Enterprise · SPL · Network & Cloud
+                                                Telemetry</span>
+                                            <span class="project-duration-text">Nov 2025</span>
+                                        </div>
+                                        <ul class="bullet-list" style="margin-top: 1.25rem;">
+                                            <li>Utilized as the core SIEM platform for data ingestion, centralized log
+                                                management, and real-time security analytics.</li>
+                                            <li>Analyzed for tracking authentication activity, tracking user behavior,
+                                                and monitoring logon success and failure metrics.</li>
+                                            <li>Integrated to monitor protocol usage, source-to-destination system
+                                                communication, and cloud-service operations.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-link-box">
+                                        <a href="https://github.com/Rehan809/Splunk-SIEM-And-Security-Analytics-Projects/tree/main/Cloud-And-Network-Security-Intelligence"
+                                            target="_blank" rel="noopener noreferrer" class="link-btn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                                            </svg>
+                                            View project on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Slide 6: Campus Network -->
+                        <div class="carousel-slide">
+                            <article class="project-card">
+                                <div class="project-img-side">
+                                    <img src="assets/campus-network-diagram.png" alt="Campus Network Topology Diagram"
+                                        onerror="this.src='https://via.placeholder.com/800x500/F4F3EE/121316?text=Campus+Network+Topology+Diagram';">
                                 </div>
                                 <div class="project-vertical-divider"></div>
                                 <div class="project-details-side">
@@ -907,21 +1111,29 @@
                                             <span class="project-duration-text">Sept 2025</span>
                                         </div>
                                         <ul class="bullet-list" style="margin-top: 1.25rem;">
-                                            <li>Configured a multi-VLAN campus network supporting 20+ active hosts with inter-VLAN routing, trunk links, and access control lists.</li>
-                                            <li>Enforced departmental isolation to reduce unauthorized access attempts by over 95% while preserving high connectivity.</li>
-                                            <li>Prevented switching loops and broadcast storms across core switches through Spanning Tree Protocol (STP) tuning.</li>
+                                            <li>Configured a multi-VLAN campus network supporting 20+ active hosts with
+                                                inter-VLAN routing, trunk links, and access control lists.</li>
+                                            <li>Enforced departmental isolation to reduce unauthorized access attempts
+                                                by over 95% while preserving high connectivity.</li>
+                                            <li>Prevented switching loops and broadcast storms across core switches
+                                                through Spanning Tree Protocol (STP) tuning.</li>
                                         </ul>
                                     </div>
                                     <div class="project-link-box">
-                                        <a href="https://github.com/Rehan809/Campus-Network-with-Router-on-a-Stick" target="_blank" rel="noopener noreferrer" class="link-btn">
-                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                        <a href="https://github.com/Rehan809/Campus-Network-with-Router-on-a-Stick"
+                                            target="_blank" rel="noopener noreferrer" class="link-btn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                                            </svg>
                                             View project on GitHub
                                         </a>
                                     </div>
                                 </div>
                             </article>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -934,7 +1146,10 @@
             <h2 class="section-heading">Education</h2>
             <div style="display:flex; gap:1.25rem; align-items:flex-start;">
                 <div style="color:var(--accent-blue); padding-top:0.2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
                 </div>
                 <div>
                     <h3 style="font-size:1.2rem; font-weight:700;">B.Tech CSE (Networks) — KITS Warangal</h3>
@@ -954,34 +1169,59 @@
                     <span class="carousel-indicator" id="cert-indicator">01 / 05</span>
                     <div class="carousel-btns">
                         <button class="icon-btn" id="cert-prev" aria-label="Previous certificate">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
                         </button>
                         <button class="icon-btn" id="cert-next" aria-label="Next certificate">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
                         </button>
                     </div>
                 </div>
 
                 <div class="carousel-viewport" id="cert-viewport">
                     <div class="carousel-container" id="cert-carousel">
-                        
+
                         <!-- Cert 1 -->
                         <div class="carousel-slide">
                             <article class="cert-card-box">
                                 <div class="cert-img-box">
-                                    <img src="assets/ccna-certificate.png" alt="CCNA Certificate" class="cert-img" onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=Cisco+Certified+Network+Associate+(CCNA)';">
-                                    <button class="expand-trigger-btn" onclick="openCertModal('Cisco Certified Network Associate (CCNA)', 'Cisco', 'assets/ccna-certificate.png', 'https://drive.google.com/file/d/1pYOoavPz5gRx0ZpSk29yD1WX7l-qn8pJ/view', 'View CCNA certificate')" aria-label="Expand certificate">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    <img src="assets/ccna-certificate.png" alt="CCNA Certificate" class="cert-img"
+                                        onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=Cisco+Certified+Network+Associate+(CCNA)';">
+                                    <button class="expand-trigger-btn"
+                                        onclick="openCertModal('Cisco Certified Network Associate (CCNA)', 'Cisco', 'assets/ccna-certificate.png', 'https://drive.google.com/file/d/1pYOoavPz5gRx0ZpSk29yD1WX7l-qn8pJ/view', 'View CCNA certificate')"
+                                        aria-label="Expand certificate">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div style="padding:1.5rem;">
-                                    <p class="font-mono text-green" style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                                    <p class="font-mono text-green"
+                                        style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="8" r="7" />
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                        </svg>
                                         Cisco
                                     </p>
-                                    <h3 style="font-size:1.25rem; font-weight:700;">Cisco Certified Network Associate (CCNA)</h3>
-                                    <a href="https://drive.google.com/file/d/1pYOoavPz5gRx0ZpSk29yD1WX7l-qn8pJ/view" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top: 0.85rem;">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <h3 style="font-size:1.25rem; font-weight:700;">Cisco Certified Network Associate
+                                        (CCNA)</h3>
+                                    <a href="https://drive.google.com/file/d/1pYOoavPz5gRx0ZpSk29yD1WX7l-qn8pJ/view"
+                                        target="_blank" rel="noopener noreferrer" class="link-btn"
+                                        style="margin-top: 0.85rem;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
                                         View CCNA certificate
                                     </a>
                                 </div>
@@ -992,19 +1232,39 @@
                         <div class="carousel-slide">
                             <article class="cert-card-box">
                                 <div class="cert-img-box">
-                                    <img src="assets/cloud-fundamentals.png" alt="Google Cloud Fundamentals Badge" class="cert-img" onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=Google+Cloud+Networking+Fundamentals';">
-                                    <button class="expand-trigger-btn" onclick="openCertModal('Networking in Google Cloud — Fundamentals', 'Google Cloud', 'assets/cloud-fundamentals.png', 'https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b', 'View Google Cloud badges')" aria-label="Expand certificate">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    <img src="assets/cloud-fundamentals.png" alt="Google Cloud Fundamentals Badge"
+                                        class="cert-img"
+                                        onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=Google+Cloud+Networking+Fundamentals';">
+                                    <button class="expand-trigger-btn"
+                                        onclick="openCertModal('Networking in Google Cloud — Fundamentals', 'Google Cloud', 'assets/cloud-fundamentals.png', 'https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b', 'View Google Cloud badges')"
+                                        aria-label="Expand certificate">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div style="padding:1.5rem;">
-                                    <p class="font-mono text-green" style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                                    <p class="font-mono text-green"
+                                        style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="8" r="7" />
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                        </svg>
                                         Google Cloud
                                     </p>
-                                    <h3 style="font-size:1.25rem; font-weight:700;">Networking in Google Cloud — Fundamentals</h3>
-                                    <a href="https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top: 0.85rem;">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <h3 style="font-size:1.25rem; font-weight:700;">Networking in Google Cloud —
+                                        Fundamentals</h3>
+                                    <a href="https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b"
+                                        target="_blank" rel="noopener noreferrer" class="link-btn"
+                                        style="margin-top: 0.85rem;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
                                         View Google Cloud badges
                                     </a>
                                 </div>
@@ -1015,19 +1275,39 @@
                         <div class="carousel-slide">
                             <article class="cert-card-box">
                                 <div class="cert-img-box">
-                                    <img src="assets/cloud-routing.png" alt="Google Cloud Routing Badge" class="cert-img" onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=Google+Cloud+Routing+%26+Addressing';">
-                                    <button class="expand-trigger-btn" onclick="openCertModal('Networking in Google Cloud — Routing & Addressing', 'Google Cloud', 'assets/cloud-routing.png', 'https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b', 'View Google Cloud badges')" aria-label="Expand certificate">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    <img src="assets/cloud-routing.png" alt="Google Cloud Routing Badge"
+                                        class="cert-img"
+                                        onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=Google+Cloud+Routing+%26+Addressing';">
+                                    <button class="expand-trigger-btn"
+                                        onclick="openCertModal('Networking in Google Cloud — Routing & Addressing', 'Google Cloud', 'assets/cloud-routing.png', 'https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b', 'View Google Cloud badges')"
+                                        aria-label="Expand certificate">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div style="padding:1.5rem;">
-                                    <p class="font-mono text-green" style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                                    <p class="font-mono text-green"
+                                        style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="8" r="7" />
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                        </svg>
                                         Google Cloud
                                     </p>
-                                    <h3 style="font-size:1.25rem; font-weight:700;">Networking in Google Cloud — Routing & Addressing</h3>
-                                    <a href="https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top: 0.85rem;">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <h3 style="font-size:1.25rem; font-weight:700;">Networking in Google Cloud — Routing
+                                        & Addressing</h3>
+                                    <a href="https://www.skills.google/public_profiles/c5a40795-fc93-40af-a20b-a255b152a00b"
+                                        target="_blank" rel="noopener noreferrer" class="link-btn"
+                                        style="margin-top: 0.85rem;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
                                         View Google Cloud badges
                                     </a>
                                 </div>
@@ -1038,19 +1318,38 @@
                         <div class="carousel-slide">
                             <article class="cert-card-box">
                                 <div class="cert-img-box">
-                                    <img src="assets/nptel-networks-certificate.png" alt="NPTEL Elite Computer Networks" class="cert-img" onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=NPTEL+Elite+Computer+Networks';">
-                                    <button class="expand-trigger-btn" onclick="openCertModal('NPTEL Elite — Computer Networks', 'NPTEL', 'assets/nptel-networks-certificate.png', 'https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view', 'View Computer Networks certificate')" aria-label="Expand certificate">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    <img src="assets/nptel-networks-certificate.png" alt="NPTEL Elite Computer Networks"
+                                        class="cert-img"
+                                        onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=NPTEL+Elite+Computer+Networks';">
+                                    <button class="expand-trigger-btn"
+                                        onclick="openCertModal('NPTEL Elite — Computer Networks', 'NPTEL', 'assets/nptel-networks-certificate.png', 'https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view', 'View Computer Networks certificate')"
+                                        aria-label="Expand certificate">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div style="padding:1.5rem;">
-                                    <p class="font-mono text-green" style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                                    <p class="font-mono text-green"
+                                        style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="8" r="7" />
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                        </svg>
                                         NPTEL
                                     </p>
                                     <h3 style="font-size:1.25rem; font-weight:700;">NPTEL Elite — Computer Networks</h3>
-                                    <a href="https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top: 0.85rem;">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <a href="https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view"
+                                        target="_blank" rel="noopener noreferrer" class="link-btn"
+                                        style="margin-top: 0.85rem;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
                                         View Computer Networks certificate
                                     </a>
                                 </div>
@@ -1061,19 +1360,39 @@
                         <div class="carousel-slide">
                             <article class="cert-card-box">
                                 <div class="cert-img-box">
-                                    <img src="assets/nptel-iot-certificate.png" alt="NPTEL Elite Internet of Things" class="cert-img" onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=NPTEL+Elite+Internet+of+Things';">
-                                    <button class="expand-trigger-btn" onclick="openCertModal('NPTEL Elite — Internet of Things', 'NPTEL', 'assets/nptel-iot-certificate.png', 'https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view', 'View IoT certificate')" aria-label="Expand certificate">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    <img src="assets/nptel-iot-certificate.png" alt="NPTEL Elite Internet of Things"
+                                        class="cert-img"
+                                        onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=NPTEL+Elite+Internet+of+Things';">
+                                    <button class="expand-trigger-btn"
+                                        onclick="openCertModal('NPTEL Elite — Internet of Things', 'NPTEL', 'assets/nptel-iot-certificate.png', 'https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view', 'View IoT certificate')"
+                                        aria-label="Expand certificate">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div style="padding:1.5rem;">
-                                    <p class="font-mono text-green" style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                                    <p class="font-mono text-green"
+                                        style="font-size:0.75rem; display:flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem;">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="8" r="7" />
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                        </svg>
                                         NPTEL
                                     </p>
-                                    <h3 style="font-size:1.25rem; font-weight:700;">NPTEL Elite — Internet of Things</h3>
-                                    <a href="https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top: 0.85rem;">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    <h3 style="font-size:1.25rem; font-weight:700;">NPTEL Elite — Internet of Things
+                                    </h3>
+                                    <a href="https://drive.google.com/file/d/1yzK1Ts1T6hY0CkWUMwRY51HI1VUhDGkM/view"
+                                        target="_blank" rel="noopener noreferrer" class="link-btn"
+                                        style="margin-top: 0.85rem;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
                                         View IoT certificate
                                     </a>
                                 </div>
@@ -1091,23 +1410,41 @@
         <div class="section-inner">
             <h2 class="section-heading">Leadership & Activities</h2>
             <div class="leadership-list">
-                
+
                 <!-- Event 1 -->
                 <article class="leadership-card">
                     <div>
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-burgundy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
-                        <p class="text-burgundy" style="font-weight:700; margin-top:0.4rem; font-size:0.95rem;">Winner</p>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" class="text-burgundy">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                            <path d="M4 22h16" />
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                        </svg>
+                        <p class="text-burgundy" style="font-weight:700; margin-top:0.4rem; font-size:0.95rem;">Winner
+                        </p>
                         <p class="font-mono text-muted" style="font-size:0.75rem;">Dec 2025</p>
                     </div>
                     <div>
-                        <h3 style="font-size:1.2rem; font-weight:700;">Zero Trust & Runtime Threat Detection Hackathon</h3>
+                        <h3 style="font-size:1.2rem; font-weight:700;">Zero Trust & Runtime Threat Detection Hackathon
+                        </h3>
                         <ul class="bullet-list">
-                            <li>Participated in a national-level cybersecurity hackathon focused on Zero Trust security principles and runtime threat detection.</li>
-                            <li>Explored network intrusion detection, security monitoring, and threat prevention concepts.</li>
+                            <li>Participated in a national-level cybersecurity hackathon focused on Zero Trust security
+                                principles and runtime threat detection.</li>
+                            <li>Explored network intrusion detection, security monitoring, and threat prevention
+                                concepts.</li>
                             <li>Secured the Winner position in the competition hosted at NIT Warangal.</li>
                         </ul>
-                        <a href="https://drive.google.com/file/d/1Iw85-rTv6OYRRkiNdZS16h84NFl71le-/view" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top:1.25rem;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        <a href="https://drive.google.com/file/d/1Iw85-rTv6OYRRkiNdZS16h84NFl71le-/view" target="_blank"
+                            rel="noopener noreferrer" class="link-btn" style="margin-top:1.25rem;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
                             View hackathon certificate
                         </a>
                     </div>
@@ -1116,17 +1453,28 @@
                 <!-- Event 2 -->
                 <article class="leadership-card">
                     <div>
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-burgundy"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        <p class="text-burgundy" style="font-weight:700; margin-top:0.4rem; font-size:0.95rem;">Core Organizer</p>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" class="text-burgundy">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        <p class="text-burgundy" style="font-weight:700; margin-top:0.4rem; font-size:0.95rem;">Core
+                            Organizer</p>
                         <p class="font-mono text-muted" style="font-size:0.75rem;">Oct 2025</p>
                     </div>
                     <div>
                         <h3 style="font-size:1.2rem; font-weight:700;">SOC & SIEM Workshop</h3>
                         <ul class="bullet-list">
-                            <li>Coordinated workshop activities, including invitations, planning, participant coordination, and distribution of workshop kits.</li>
-                            <li>Supported the organization and execution of hands-on cybersecurity learning sessions.</li>
-                            <li>Technical workshop featuring guest speaker Ajinkya Lohakare, Ethical Hacker and CTO at Ditto Security.</li>
-                            <li>Successfully organized the event for over 150 student and professional participants.</li>
+                            <li>Coordinated workshop activities, including invitations, planning, participant
+                                coordination, and distribution of workshop kits.</li>
+                            <li>Supported the organization and execution of hands-on cybersecurity learning sessions.
+                            </li>
+                            <li>Technical workshop featuring guest speaker Ajinkya Lohakare, Ethical Hacker and CTO at
+                                Ditto Security.</li>
+                            <li>Successfully organized the event for over 150 student and professional participants.
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -1134,19 +1482,37 @@
                 <!-- Event 3 -->
                 <article class="leadership-card">
                     <div>
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-burgundy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
-                        <p class="text-burgundy" style="font-weight:700; margin-top:0.4rem; font-size:0.95rem;">Winner</p>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" class="text-burgundy">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                            <path d="M4 22h16" />
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                        </svg>
+                        <p class="text-burgundy" style="font-weight:700; margin-top:0.4rem; font-size:0.95rem;">Winner
+                        </p>
                         <p class="font-mono text-muted" style="font-size:0.75rem;">Mar 2025</p>
                     </div>
                     <div>
                         <h3 style="font-size:1.2rem; font-weight:700;">FinTech Security Hackathon</h3>
                         <ul class="bullet-list">
-                            <li>Participated in a cybersecurity hackathon focused on identifying and addressing security challenges in financial technology environments.</li>
-                            <li>Explored cybersecurity concepts related to financial systems, threat identification, and security monitoring.</li>
-                            <li>Secured the Winner position in the MeitY ISEA-III sponsored competition at NIT Warangal.</li>
+                            <li>Participated in a cybersecurity hackathon focused on identifying and addressing security
+                                challenges in financial technology environments.</li>
+                            <li>Explored cybersecurity concepts related to financial systems, threat identification, and
+                                security monitoring.</li>
+                            <li>Secured the Winner position in the MeitY ISEA-III sponsored competition at NIT Warangal.
+                            </li>
                         </ul>
-                        <a href="https://drive.google.com/file/d/18DVkLHqji5Qv5QX_akHjgBfla8a69X32/view" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top:1.25rem;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        <a href="https://drive.google.com/file/d/18DVkLHqji5Qv5QX_akHjgBfla8a69X32/view" target="_blank"
+                            rel="noopener noreferrer" class="link-btn" style="margin-top:1.25rem;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
                             View hackathon certificate
                         </a>
                     </div>
@@ -1162,9 +1528,11 @@
             <h2 class="section-heading" style="color:var(--text-light);">Contact</h2>
             <div>
                 <h2 class="contact-heading">Let's build secure networks<span class="brand-dot">.</span></h2>
-                <p class="font-mono text-muted" style="margin-top:0.75rem; font-size:1rem; color:#C5C1B9;">Hyderabad, India · +91 8096246405</p>
+                <p class="font-mono text-muted" style="margin-top:0.75rem; font-size:1rem; color:#C5C1B9;">Hyderabad,
+                    India · +91 8096246405</p>
                 <div style="margin-top:2rem;">
-                    <a href="mailto:rehanshaik6405@gmail.com" class="btn btn-yellow" style="padding:0.875rem 1.75rem; font-size:0.95rem; word-break:break-all;">rehanshaik6405@gmail.com</a>
+                    <a href="mailto:rehanshaik6405@gmail.com" class="btn btn-yellow"
+                        style="padding:0.875rem 1.75rem; font-size:0.95rem; word-break:break-all;">rehanshaik6405@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -1181,13 +1549,19 @@
             <button class="modal-close-btn" onclick="closeCertModal(event)">&times;</button>
             <h2 class="modal-title" id="modal-cert-title">Cisco Certified Network Associate (CCNA)</h2>
             <p class="modal-subtitle" id="modal-cert-provider">Cisco</p>
-            
+
             <div class="modal-image-container">
-                <img id="modal-cert-img" src="assets/ccna-certificate.png" alt="Certificate View" onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=' + encodeURIComponent(document.getElementById('modal-cert-title').textContent);">
+                <img id="modal-cert-img" src="assets/ccna-certificate.png" alt="Certificate View"
+                    onerror="this.src='https://via.placeholder.com/800x550/F4F3EE/121316?text=' + encodeURIComponent(document.getElementById('modal-cert-title').textContent);">
             </div>
 
-            <a id="modal-cert-link" href="#" target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-top: auto;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <a id="modal-cert-link" href="#" target="_blank" rel="noopener noreferrer" class="link-btn"
+                style="margin-top: auto;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
                 <span id="modal-cert-link-text">View certificate</span>
             </a>
         </div>
@@ -1276,7 +1650,7 @@
 
             viewport.addEventListener('touchstart', (e) => {
                 startX = e.touches[0].clientX;
-            }, {passive: true});
+            }, { passive: true });
 
             viewport.addEventListener('touchend', (e) => {
                 const endX = e.changedTouches[0].clientX;
@@ -1286,21 +1660,21 @@
                 } else if (diff > 50) {
                     prevSlide();
                 }
-            }, {passive: true});
+            }, { passive: true });
 
             updateSlide();
         }
 
-        createCircularCarousel('project-viewport', 'project-carousel', 'project-prev', 'project-next', 'project-indicator', 4);
+        createCircularCarousel('project-viewport', 'project-carousel', 'project-prev', 'project-next', 'project-indicator', 6);
         createCircularCarousel('cert-viewport', 'cert-carousel', 'cert-prev', 'cert-next', 'cert-indicator', 5);
 
         // Certificate Expansion Modal Logic
         function openCertModal(title, provider, imgSrc, linkUrl, linkText) {
             document.getElementById('modal-cert-title').textContent = title;
             document.getElementById('modal-cert-provider').textContent = provider;
-            
+
             const modalImg = document.getElementById('modal-cert-img');
-            modalImg.onerror = function() {
+            modalImg.onerror = function () {
                 this.src = 'https://via.placeholder.com/800x550/F4F3EE/121316?text=' + encodeURIComponent(title);
             };
             modalImg.src = imgSrc;
@@ -1316,4 +1690,5 @@
         }
     </script>
 </body>
+
 </html>
